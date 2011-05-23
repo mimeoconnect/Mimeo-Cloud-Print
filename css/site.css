@@ -1,0 +1,894 @@
+*
+{
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+html
+{
+	overflow-y: scroll;
+}
+body
+{
+	background: transparent;
+	font-family: "Lucida Grande",Arial,sans-serif;
+}
+a
+{
+	color: #37bbde;
+}
+a:hover
+{
+	color: #7d0e87;
+}
+input.textinput
+{
+	font-family: "Lucida Grande",Arial,sans-serif;
+	font-size: 11px;
+	padding: 0 1px;
+	text-transform: uppercase;
+}
+select
+{
+	font-family: "Lucida Grande",Arial,sans-serif;
+	font-size: 11px;
+	padding: 0;
+	text-transform: uppercase;
+}
+#faq-link
+{
+	background: transparent url(/images/buttons.png);
+	background-position: -200px -450px;
+	cursor: pointer;
+	height: 15px;
+	left: 650px;
+	position: absolute;
+	top: 20px;
+	width: 51px;
+}
+#faq-link:hover
+{
+	background-position: -200px -465px;
+}
+.clear
+{
+	clear: both;
+}
+.fl
+{
+	float: left;
+}
+.fr
+{
+	float: right;
+}
+ol li
+{
+	display: block;
+	list-style: none;
+}
+ol h2
+{
+	background: url(/images/buttons.png) no-repeat;
+	height: 25px;
+	margin-bottom: 5px;
+	float: left;
+}
+span.req
+{
+	color: #37bbde;
+	font-weight: bold;
+}
+h2
+{
+	visibility: visible;
+}
+.hidden
+{
+	display: none;
+}
+ol h2 span,#frame-header h1,a#close-btn span,dl#book-cost dt span,#step2 #book-style label span,#step2 #book-size label span,#step2 #print-pages-in label span,#step2 #preview-links a span,#step4 h2 span
+{
+	position: absolute;
+	top: -9999px;
+}
+.frame
+{
+	margin: 40px auto;
+	position: relative;
+	width: 775px;
+}
+#frame-header
+{
+	height: 59px;
+}
+
+a#close-btn
+{
+	background: url(/images/buttons.png) no-repeat 0 0;
+	display: block;
+	height: 41px;
+	position: absolute;
+	right: -18px;
+	top: -18px;
+	width: 41px;
+}
+a#close-btn:hover
+{
+	background-position: 0 -41px;
+}
+#frame-body
+{
+	background: #FFF;
+	width: 775px;
+}
+#errorpage #frame-body
+{
+	height: 500px;
+}
+#frame-footer
+{
+	background: url(/images/footer.png) no-repeat 0 0;
+	height: 63px;
+}
+#step1 #frame-body
+{
+	background: #FFF url(/images/loadingbar.png) no-repeat 0 250px;
+}
+#errorpage #frame-body
+{
+	background: #FFF url(/images/errorbar.png) no-repeat 0 250px;
+}
+#errorpage .error
+{
+	color: #3c3434;
+	font-size: 2em;
+	left: 0px;
+	padding: 0px 50px;
+	position: relative;
+	top: 200px;
+}
+#step1 strong#percent
+{
+	color: #CCC;
+	font-size: 5em;
+	left: 280px;
+	position: absolute;
+	top: 250px;
+}
+#errorpage a
+{
+	color: #3c3434;
+}
+#step2 .left-panel
+{
+	float: left;
+	margin: 18px 40px;
+	text-align: center;
+	width: 340px;
+}
+#step2 span.summary
+{
+	color: #3c3434;
+	display: block;
+	font-family: "Lucida Grande",Arial,sans-serif;
+	font-size: 11px;
+	margin-bottom: 13px;
+	text-transform: uppercase;
+}
+#step2 #preview
+{
+	background: url(/images/step2/8x11.png) no-repeat 0 0;
+	height: 409px;
+	width: 340px;
+}
+#step2 #preview-links li
+{
+	list-style: none;
+}
+#step2 #preview-links a
+{
+	background: url(/images/step2/frontback.png);
+	display: block;
+	height: 31px;
+}
+#step2 #preview-links li
+{
+	display: block;
+	float: left;
+	height: 31px;
+}
+#step2 a#preview-front
+{
+	background-position: 0 -31px;
+	border-right: 1px solid #dfdfdf;
+	display: inline;
+	float: left;
+	width: 168px;
+}
+#step2 #preview-links li.selected a#preview-front,#step2 #preview-links a#preview-front:hover
+{
+	background-position: 0 0;
+}
+#step2 a#preview-back
+{
+	background-position: -171px 0;
+	width: 168px;
+}
+#step2 #preview-links li.selected a#preview-back,#step2 #preview-links a#preview-back:hover
+{
+	background-position: -171px -31px;
+}
+#step2 .right-panel
+{
+	float: left;
+	margin: 20px 0 0 0;
+	width: 342px;
+}
+#step2 ol #book-style h2
+{
+	background-position: 0 -91px;
+}
+#step2 ol #book-size h2
+{
+	background-position: 0 -116px;
+}
+#step2 ol #print-pages-in h2
+{
+	background-position: 0 -141px;
+}
+#step2 ol #personalize-cover h2
+{
+	background-position: 0 -166px;
+
+}
+#step2 #book-style
+{
+	float: left;
+	height: 130px;
+	margin-right: 6px;
+	overflow: hidden;
+	width: 231px;
+}
+#step2 #book-style label
+{
+	background: url(/images/step2/styles.png);
+	display: block;
+	float: left;
+	height: 86px;
+	margin-right: 6px;
+	width: 63px;
+}
+#step2 #book-style .styles
+{
+	margin-left: 30px;
+}
+#step2 #book-style label#style-preso
+{
+	background-position: 0 0;
+}
+#step2 #book-style label#style-paperback
+{
+	background-position: -69px 0;
+}
+#step2 #book-style label#style-magazine
+{
+	background-position: -138px 0;
+	margin-right: 0;
+}
+#step2 #book-style label#style-preso:hover,#step2 #book-style label#style-preso.active
+{
+	background-position: 0 -86px;
+}
+#step2 #book-style label#style-paperback:hover,#step2 #book-style label#style-paperback.active
+{
+	background-position: -69px -86px;
+}
+#step2 #book-style label#style-magazine:hover,#step2 #book-style label#style-magazine.active
+{
+	background-position: -138px -86px;
+}
+#step2 #book-size
+{
+	float: right;
+	height: 130px;
+	width: 105px;
+}
+#step2 #book-size label
+{
+	background: url(/images/step2/size.png);
+	display: block;
+	width: 105px;
+}
+#step2 #book-size label#size-standard
+{
+	background-position: 0 0;
+	height: 41px;
+	margin-bottom: 4px;
+}
+#step2 #book-size label#size-travel
+{
+	background-position: 0 -82px;
+	height: 51px;
+}
+#step2 #book-size label#size-standard:hover,#step2 #book-size label#size-standard.active
+{
+	background-position: 0 -41px;
+}
+#step2 #book-size label#size-standard.inactive
+{
+	background-position: 0 0;
+	height: 41px;
+	margin-bottom: 4px;
+}
+#step2 #book-size label#size-travel:hover,#step2 #book-size label#size-travel.active
+{
+	background-position: 0 -133px;
+}
+#step2 #book-size label#size-travel.inactive
+{
+	background-position: 0 -82px;
+	height: 51px;
+}
+#step2 #print-pages-in
+{
+	clear: both;
+	height: 130px;
+}
+#step2 #print-pages-in label
+{
+	background: url(/images/step2/print-pages-in.png);
+	display: block;
+	float: left;
+	height: 86px;
+	margin-right: 6px;
+	width: 63px;
+}
+#step2 #print-pages-in label#ink-black
+{
+	background-position: 0 0;
+}
+#step2 #print-pages-in label#ink-color
+{
+	background-position: -69px 0;
+}
+#step2 #print-pages-in label#ink-black:hover,#step2 #print-pages-in label#ink-black.active
+{
+	background-position: 0 -86px;
+}
+#step2 #print-pages-in label#ink-color:hover,#step2 #print-pages-in label#ink-color.active
+{
+	background-position: -69px -86px;
+}
+#step2 #personalize-cover div.fieldwrap
+{
+	margin: 0 0 8px 30px;
+}
+#step2 #personalize-cover label
+{
+	display: block;
+	font-family: "Lucida Grande",Arial,sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+#step2 #personalize-cover input.textinput
+{
+	margin: 2px 0;
+	width: 87%;
+}
+#step3 #frame-body div.content
+{
+	padding: 22px 42px 0;
+}
+#step3 #delivery-address h2
+{
+	background-position: 0 -191px;
+}
+#step3 #billing-address h2
+{
+	background-position: 0 -216px;
+	width: 200px;
+}
+#step3 #payment h2
+{
+	background-position: 0 -241px;
+}
+#step3 #delivery-option h2
+{
+	background-position: 0 -266px;
+	float: left;
+	width: 200px;
+}
+#step2 #quantity h2
+{
+	background-position: 0 -291px;
+}
+#step3 #email h2
+{
+	background-position: 0 -405px;
+}
+#step3 #delivery-option span.ship-by
+{
+	color: #a32a9b;
+	display: block;
+	float: left;
+	font-size: 0.7em;
+	padding-top: 7px;
+}
+#step3 div.fieldwrap
+{
+	margin: 0 0 8px 30px;
+}
+#step3 #use-delivery
+{
+	margin: 5px 0 0 0;
+}
+#step3 div.fieldwrap label
+{
+	font-size: 11px;
+	text-transform: uppercase;
+}
+#step3 div.fieldwrap input.textinput
+{
+	display: block;
+	margin: 1px 0;
+	text-transform: none;
+	width: 250px;
+}
+#step3 #delivery-address,#step3 #billing-address
+{
+	float: left;
+	width: 330px;
+}
+#step3 #delivery-address
+{
+	margin-right: 30px;
+}
+#step3 div.fieldwrap-city,#step3 div.fieldwrap-state
+{
+	float: left;
+	margin-right: 10px;
+}
+#step3 div.fieldwrap-city input.textinput
+{
+	width: 120px;
+}
+#step3 div.fieldwrap-zip input.textinput
+{
+	width: 62px;
+}
+#step3 div.fieldwrap-state select
+{
+	display: block;
+	margin: 1px 0;
+	width: 50px;
+}
+#step3 div.fieldwrap-state,#step3 div.fieldwrap-zip
+{
+	float: left;
+	margin-left: 0;
+}
+#step3 #payment
+{
+	float: left;
+	height: 120px;
+	margin-right: 30px;
+	width: 330px;
+	display: block;
+	margin-top: 5px;
+}
+#step3 div.fieldwrap-exp,#step3 div.fieldwrap-start
+{
+	float: left;
+	margin-right: 10px;
+}
+#step3 div.fieldwrap-exp label.title,#step3 div.fieldwrap-start label.title,#step3 div.fieldwrap-cvc label,#step3 div.fieldwrap-issuenumber label
+{
+	display: block;
+}
+#step3 div.fieldwrap-exp select.textinput,#step3 div.fieldwrap-start select.textinput,#step3 div.fieldwrap-issuenumber input.textinput,#step3 div.fieldwrap-cvc input.textinput
+{
+	float: left;
+	margin-right: 10px;
+	width: 48px;
+}
+#step3 div.fieldwrap-start span,#step3 div.fieldwrap-exp span
+{
+	float: left;
+	margin-right: 10px;
+}
+#step3 div.fieldwrap-cvc,#step3 div.fieldwrap-issuenumber
+{
+	float: left;
+	margin-left: 0;
+}
+#step3 div.fieldwrap-cvc a
+{
+	float: left;
+	font-size: 11px;
+	margin: 6px 0 0 0;
+}
+#step3 #delivery-option
+{ 
+	float: right;
+	height: 190px;
+	padding-top: 10px;
+	width: 320px;
+	overflow: auto;
+	display: block;
+}
+#delivery-option label.radio,#delivery-option p
+{
+	float: left;
+	font-size: 10px;
+}
+#delivery-option .options
+{
+	margin-left: 15px;
+}
+#step2 #quantity
+{
+	float: left;
+	width: 330px;
+}
+#step2 #quantity h2
+{
+	float: left;
+	width: 130px;
+}
+#step2 #quantity input.textinput
+{
+	float: left;
+	margin: 3px 0 0 0;
+	width: 40px;
+}
+#step3 #email
+{
+	float: left;
+	height: 70px;
+	margin-right: 30px;
+	width: 330px;
+	top: -250px;
+	display: block;
+}
+#step3 #email h2
+{
+	width: 230px;
+}
+#step3 #terms-check
+{
+	margin-top: 10px;
+}
+div.fieldwrap label.check span
+{
+	text-transform: none;
+}
+#step4 div.content
+{
+	padding: 22px 42px;
+}
+#step4 div.im
+{
+	float: left;
+	width: 278px;
+}
+#step4 #summary
+{
+	float: left;
+	width: 413px;
+}
+#step4 h2
+{
+	background: url(/images/buttons.png) no-repeat 0 -360px;
+	height: 18px;
+	margin: 15px 0 25px;
+}
+#step4 h3
+{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#step4 dl
+{
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+#step4 dl dt
+{
+	clear: left;
+	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 135px;
+}
+#step4 dl dd
+{
+	float: left;
+	margin: 0 0 5px 0;
+	width: 277px;
+}
+#step4 #receipt
+{
+	border-top: 1px solid #DDD;
+	margin: 25px 0 0 0;
+	padding: 15px 0 0 0;
+}
+#step4 #form-receipt
+{
+	background: url(/images/step4/receipt-thumb.jpg) no-repeat 0 0;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0 0 0 100px;
+	width: 236px;
+}
+#step4 div.fieldwrap label
+{
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0 0 2px;
+	text-transform: uppercase;
+}
+#step4 div.fieldwrap
+{
+	padding: 5px 0 8px;
+}
+button#btn-send
+{
+	background: url(/images/buttons.png) no-repeat -101px -316px;
+	float: left;
+	height: 18px;
+	margin: 0 0 0 5px;
+	width: 56px;
+}
+button#btn-send:hover
+{
+	background-position: -101px -334px;
+}
+button#btn-download
+{
+	background: url(/images/buttons.png) no-repeat -157px -316px;
+	height: 18px;
+	margin: 3px 0 0 0;
+	width: 126px;
+}
+button#btn-download:hover
+{
+	background-position: -157px -334px;
+}
+.book-cost
+{
+	width: 700; 
+	height: 30px; 
+	margin-top:-10px; 
+	margin-left: 270px; 
+	float: left;
+}
+button#btn-checkout,button#btn-purchase
+{
+	background: url(/images/buttons.png) no-repeat -63px 0;
+	clear: both;
+	float: right;
+	height: 36px;
+	margin: 15px 30px 0 0;
+	width: 184px;
+}
+button#btn-checkout:hover
+{
+	background-position: -63px -36px;
+}
+button#btn-purchase
+{
+	background-position: 0 -430px;
+}
+button#btn-purchase:hover
+{
+	background-position: 0 -466px;
+}
+button#btn-edit,button.btn-edit
+{
+	background: url(/images/buttons.png) no-repeat 0 -316px;
+	height: 20px;
+	width: 101px;
+}
+button#btn-edit:hover
+{
+	background-offset: 0 -336px;
+}
+div.message
+{
+	font-size: 0.8125em;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+	padding: 10px 15px;
+}
+.text-content div.message
+{
+	font-size: 1.0833em;
+}
+div.message-info
+{
+	background: #b6f0a2;
+	color: #2e4625;
+}
+div.message-warn
+{
+	background: #F9E782;
+	color: #45412E;
+}
+div.message-error
+{
+	background: #c00;
+	color: #fff;
+}
+div.message form.undo
+{
+	display: inline;
+	line-height: 0;
+	margin-left: 6px;
+}
+div.message form.undo div
+{
+	display: inline;
+}
+div.message form.undo div button.link span
+{
+	font-weight: bold;
+}
+pre.message
+{
+	color: #5A5C5E;
+	font-family: "Courier New";
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 17px;
+}
+div.stickyWin
+{
+	background: #ffffff;
+	border: 1px solid #333;
+	float: left;
+	position: relative;
+	text-align: left;
+}
+div.stickyWin div.header
+{
+	background: #333;
+	color: #fff;
+	padding: 5px;
+}
+div.stickyWin div.closeButton
+{
+	cursor: pointer;
+	position: absolute;
+	right: 14px;
+	top: 5px;
+}
+div.stickyWin div.middle div.inner
+{
+	height: 500px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+div.stickyWin div.body
+{
+	padding: 10px;
+}
+.faq-content p
+{
+	padding: 10px 0px;
+}
+.faq-content h3
+{
+	padding: 10px 0px 0px 0px;
+}
+
+/* Button */
+button {
+border: 0 none;
+cursor: pointer;
+font-weight: bold;
+padding: 0 15px 0 0;
+text-align: center;
+height: 30px;
+line-height: 30px;
+width: auto;
+}
+
+button span {
+display: block;
+padding: 0 0 0 15px;
+position: relative;
+white-space: nowrap;
+height: 30px;
+line-height: 30px;
+}
+
+button.blueblackrounded {
+background: transparent url( /images/blue_black_btn_right.png ) no-repeat scroll right top;
+clear: left;
+font-size: 0.8em;
+}
+
+button.blueblackrounded span {
+background: transparent url( /images/blue_black_btn_left.png ) no-repeat scroll left top;
+color: #FFFFFF;
+}
+
+button.blueblackrounded:hover {
+background-position: 100% -30px;
+}
+
+button.blueblackrounded:hover span {
+background-position: 0% -30px;
+}
+
+
+
+button.bluebluekrounded {
+background: transparent url( /images/blue_blue_btn_right.png ) no-repeat scroll right top;
+clear: left;
+font-size: 0.8em;
+}
+
+button.bluebluerounded span {
+background: transparent url( /images/blue_blue_btn_left.png ) no-repeat scroll left top;
+color: #FFFFFF;
+}
+
+button.bluebluerounded:hover {
+background-position: 100% -30px;
+}
+
+button.bluebluerounded:hover span {
+background-position: 0% -30px;
+}
+
+
+button::-moz-focus-inner {
+border: none;
+}
+/* Button */
+
+.generic{
+	width: 500px;
+	position: relative;
+	left: 50%;
+	margin-left: -400px; /* half the width of the div */	
+	}
+
+/* My Section Header Modifications */
+.section-header
+{
+width:300px; 
+height: 29px; 
+font-weight: 
+bold; 
+font-size: 18px;	
+}
+
+.file-preview-title
+	{
+	position:absolute; 
+	top:175px; 
+	left:110px; 
+	width:200px; 
+	height:25px; 
+	text-align: center; 
+	font-size: 14px;	
+	text-transform: capitalize;
+	}
+
+.file-preview-for
+	{
+	position:absolute; 
+	top:260px; 
+	left:110px; 
+	width:200px; 
+	height:25px; 
+	text-align: center;
+	font-size: 12px;	
+	}
